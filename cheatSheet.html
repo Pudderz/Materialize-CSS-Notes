@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materialize CSS</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        .box{
+            height:200px;
+        }
+        
+        nav .badge{
+            position: relative;
+            top: 20px;
+            right:20px;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Materialize css</h1> 
+    <div class="container">
+
+
+       <p>this is a paragraph</p>
+       <p class="flow-text">this is flow text</p>
+    </div>
+    <!-- Hide elements depending on size -->
+    <div class="container">
+        <h4 class="hide">Hide me on all screen sizes</h4>
+        <h4 class="hide-on-small-only">Hide me on small screen sizes</h4>
+        <h4 class="hide-on-med-only">Hide me on medium screen sizes</h4>
+        <h4 class="hide-on-large-only">Hide me on large screen sizes</h4>
+        <h4 class="hide-on-med-and-down">Hide me on medium & small screen sizes</h4>
+        <h4 class="hide-on-med-and-up">Hide me on medium & large screen sizes</h4>
+    </div>
+    <!-- Color https://materializecss.com/color.html-->
+    <div class="container">
+        <h4 class="blue">This will have the colour blue</h4>
+        <h4 class="blue lighten-1">This will have the colour blue but is lightened by 1</h4>
+        <h4 class="blue darken-1">This will have the colour blue but is darkened by 1</h4>
+        <h4 class="blue lighten-5">This will have the colour blue but is lightened by 5</h4>
+        <h4 class="blue darken-5 white-text">This will have the colour blue but is darkened by 1 and has white text</h4>
+        <h4 class="teal darken-5  yellow-text text-lighten-3">This will have the colour teal darkened 5 and has yellow text which is lightened by 3</h4>
+        <h4 class="yellow lighten-3 purple-text text-darken-2">Colour yellow lighten 3 and purple text darkened by 2</h4>
+    </div>
+    <!-- Text Formating -->
+    <div class="container">
+        <h4 class="center-align">Center alignment</h4>
+        <h4 class="left-align">left alignment</h4>
+        <h4 class="right-align">right alignment</h4>
+    </div>
+
+    <div class="container grey lighten-2 box valign-wrapper" >
+        <h5>Vertical alignment</h5>
+    </div>
+    <div class="container">
+        <p class="truncate">truncate shortens the content to one line by cutting off the rest of the text.
+        This is useful for blog posts or adding snippets of text</p>
+    </div>
+    
+
+    <!-- Buttons -->
+    <div class="container">
+        <h4>Buttons</h4>
+        <h5>Without materialize css</h5>
+        <button>Default Button</button>
+        <h5>With materialize css</h5>
+        <a href="#" class="btn">Normal Button</a>
+        <a href="#" class="btn-small">Small Button</a>
+        <a href="#" class="btn-large">Large Button</a>
+        <a href="#" class="btn indigo">Indigo Button</a>
+        <a href="#" class="btn disabled">Disabled Button</a>
+        <a href="" class="btn waves-effect waves-light">waves effect light button when clicked</a>
+        <a href="" class="btn waves-effect waves-dark">waves effect dark button when clicked</a>
+        <h4>Floating button</h4>
+        <a href="#" class="btn-floating"></a>
+        <p>This is noramlly used to create circler buttons with icons in them</p>
+        <a href="#" class="btn-floating pulse red"></a>
+        <h4>Other elements</h4>
+        <div class="btn">We can give many other elements look like a button</div>
+    </div>
+
+
+    <div class="container">
+        <h4>Icons</h4>
+        <p>We can use the google icon font library here if we add a link to the stylesheet</p>
+        <p>To put them onto the page we add the classname material-icons and enter the name found in 
+        the library into the &lt;i&gt; tag text </p>
+        <!-- List of all icons https://material.io/resources/icons/?style=baseline -->
+        <i class="material-icons red-text">error</i>
+        <i class="material-icons yellow-text text-darken-3">warning</i>
+        <i class="material-icons grey-text">cloud</i>
+        <i class="material-icons blue-text">folder</i>
+        
+        <h4>Icons on Buttons</h4>
+        <a href="#" class="btn indigo">
+            <span>Send</span>
+            <i class="material-icons">send</i>
+        </a>
+        <a href="#" class="btn indigo">
+            <span>Send</span>
+            <i class="material-icons left">send</i>
+        </a>
+        <a href="#" class="btn indigo">
+            <span>Send</span>
+            <i class="material-icons right">send</i>
+        </a>
+
+        <a href="#"" class="btn pink waves-effect waves-light">
+            <span>Email</span>
+            <i class="material-icons left">email</i>
+        </a>
+
+        <h4>Icons on Floating Buttons</h4>
+        <a href="#" class="btn-floating blue">
+            <i class="material-icons">add</i>
+        </a>
+        <a href="#" class="btn-floating red">
+            <i class="material-icons">remove</i>
+        </a>
+        <a href="#" class="btn-floating orange">
+            <i class="material-icons">edit</i>
+        </a>
+    </div>
+
+
+    <div class="container">
+        <h4>Responsive Grid</h4>
+        <p>The standard grid has 12 columns of equal length no matter the size of the browser.</p>
+        <p></p>
+        <div class="row">
+            <div class="col s3 grey lighten-2">content</div>
+            <div class="col s3 grey lighten-2">content</div>
+            <div class="col s3 grey lighten-2">content</div>
+            <div class="col s3 grey lighten-2">content</div>
+        </div>
+        <div class="row">
+            <div class="col s6 m3 grey lighten-2">content</div>
+            <div class="col s6 m3 grey lighten-2">content</div>
+            <div class="col s6 m3 grey lighten-2">content</div>
+            <div class="col s6 m3 grey lighten-2">content</div>
+        </div>
+        <div class="row">
+            <div class="col s12 m6 l4 xl2 grey lighten-2">content</div>
+            <div class="col s12 m6 l4 xl2 grey lighten-2">content</div>
+            <div class="col s12 m6 l4 xl2 grey lighten-2">content</div>
+            <div class="col s12 m6 l4 xl2 grey lighten-2">content</div>
+            <div class="col s12 m6 l4 xl2 grey lighten-2">content</div>
+        </div>
+        <div class="row">
+            <div class="col s12 m12   grey lighten-2">content</div>
+            <div class="col s12 m4 offset-m8  grey lighten-2">content with offset 8</div>
+            <div class="col s12 m4   grey lighten-2">content</div>
+            <div class="col s12 m8   grey lighten-2">content</div>
+        </div>
+        <div class="row">
+            <div class="col s7 push-s5  grey lighten-2">1st content box</div>
+            <div class="col s5 pull-s7  grey lighten-2">2nd content box</div>
+        
+        </div>
+    </div>
+    
+    <div class="container">
+        <h4>Sections & Dividers</h4>
+        <p>class="section" - used for simple top and bottom padding</p>
+        <p>class="divider" - used to put 1 pixel lines in to help break up and divide the page</p>
+        <div class="section">
+            <h5>Section 1</h5>
+            <p>Stuff</p>
+        </div>
+        <div class="divider"></div>
+        <div class="section">
+            <h5>Section 2</h5>
+            <p>Stuff</p>
+        </div>
+        <div class="divider"></div>
+    </div>
+
+
+    <div class="container">
+        <h4>Depth & shadows</h4>
+        <div class="row">
+            <div class="col s2">
+                <div></div>
+            </div>
+            <div class="col s2">
+                <div class="z-depth-1">z-depth-1</div>
+            </div>
+            <div class="col s2">
+                <div class="z-depth-2">z-depth-2</div>
+            </div>
+            <div class="col s2">
+                <div class="z-depth-3">z-depth-3</div>
+            </div>
+            <div class="col s2">
+                <div class="z-depth-4">z-depth-4</div>
+            </div>
+            <div class="col s2">
+                <div class="z-depth-5">z-depth-5</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h4>Navbars</h4>
+    </div>
+    <nav class="nav-wrapper teal">
+        <div class="container">
+            <a href="#!"class="brand-logo">Site Title</a>
+            <a href="#" class="sidenav-trigger" data-target="mobile-links">
+                <i class="material-icons">menu</i>
+            </a>
+           <ul class="right hide-on-med-and-down"> 
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="" class="btn-floating teal darken-4 z-depth-0">
+                    <i class="material-icons">notifications</i>
+                </a></li>
+                <li>
+                    <span class="badge white-text pink new">5</span>
+                </li>
+            </ul> 
+        </div>
+        
+    </nav>
+    <ul class="sidenav" id="mobile-links">
+        <li><a href="">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Contact</a></li>
+    </ul>
+
+
+    <div class="container">
+        <h4>Cards</h4>
+        <div class="row">
+            <div class="col s12 l6">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="./curry.jpg" alt="curry">
+                        <a href="#" class="halfway-fab btn-floating ">
+                            <i class="material-icons red white-text">favorite</i>
+                        </a>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">Mango & chickpea curry</span>
+                        <p>This is the cards text</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">More details</a>
+                        <a href="#">View Ingredients</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 l6">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="./pasta.jpg" alt="pasta">
+                        <a href="#" class="halfway-fab btn-floating ">
+                            <i class="material-icons red white-text">favorite</i>
+                        </a>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">Raindow Pasta salad</span>
+                        <p>This is the cards text</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">More details</a>
+                        <a href="#">View Ingredients</a>
+                    </div>
+                </div>
+            </div>
+            
+
+        </div>
+    </div>
+
+
+    <div class="container">
+        <h4>Collections</h4>
+        <ul class="collection with-header">
+            <li class="collection-header"><h5>Collection header</h5></li>
+            <li class="collection-item avatar">
+                <i class="material-icons circle blue">person</i>
+                <span class="title">Collection Item</span> 
+                <p class="grey-text">Collection text</p>
+                <a href="#">
+                    <i class="material-icons right ">mail</i>
+                </a>
+            
+            </li>
+            <li class="collection-item avatar">
+                <i class="material-icons circle blue">person</i>
+                <span class="title">Collection Item</span> 
+                <p class="grey-text">Collection text</p>
+                <a href="#">
+                    <i class="material-icons right ">mail</i>
+                </a>
+            
+            </li>
+            <li class="collection-item avatar">
+                <i class="material-icons circle blue">person</i>
+                <span class="title">Collection Item</span> 
+                <p class="grey-text">Collection text</p>
+                <a href="#">
+                    <i class="material-icons right ">mail</i>
+                </a>
+            
+            </li>
+            <li class="collection-item avatar">
+                <i class="material-icons circle blue">person</i>
+                <span class="title">Collection Item</span> 
+                <p class="grey-text">Collection text</p>
+                <a href="#">
+                    <i class="material-icons right ">mail</i>
+                </a>
+            
+            </li>
+            <li class="collection-item avatar">
+                <i class="material-icons circle blue">person</i>
+                <span class="title">Collection Item</span> 
+                <p class="grey-text">Collection text</p>
+                <a href="#">
+                    <i class="material-icons right ">mail</i>
+                </a>
+            
+            </li>
+            
+        </ul>
+    </div>
+
+
+    <div class="container">
+        <h4>Modals</h4>
+        <a href="#terms" class="btn orange modal-trigger">Terms & Conditions</a>
+        <div class="modal" id="terms">
+            <div class="modal-content">
+                <h4>Terms & Conditions</h4>
+                <p>A bunch of text</p>
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-close waves-effect waves-green btn">Agree & Close</a>
+              </div>
+        </div>
+    </div>
+
+    <div class="container"> 
+        <h4>Pagination</h4>
+        <ul class="pagination">
+            <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+            <li class="active"><a href="#!">1</a></li>
+            <li class="waves-effect"><a href="#!">2</a></li>
+            <li class="waves-effect"><a href="#!">3</a></li>
+            <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+          </ul>
+    </div>
+
+    <div class="container">
+        <h4>Progress bars</h4>
+        <h5>Linear Lines</h5>
+        <h6>class="progress"</h6>
+        <p>class="determinate"</p>
+        <div class="progress">
+            <div class="determinate" style="width:60%"></div>
+        </div>
+        <p>class="indeterminate"</p>
+        <div class="progress">
+            <div class="indeterminate"></div>
+        </div>
+
+        <h5>Circular Lines</h5>
+        <div class="preloader-wrapper big active">
+            <div class="spinner-layer spinner-blue-only">
+              <div class="circle-clipper left">
+                <div class="circle"></div>
+              </div><div class="gap-patch">
+                <div class="circle"></div>
+              </div><div class="circle-clipper right">
+                <div class="circle"></div>
+              </div>
+            </div>
+          </div>
+        
+          <div class="preloader-wrapper active">
+            <div class="spinner-layer spinner-red-only">
+              <div class="circle-clipper left">
+                <div class="circle"></div>
+              </div><div class="gap-patch">
+                <div class="circle"></div>
+              </div><div class="circle-clipper right">
+                <div class="circle"></div>
+              </div>
+            </div>
+          </div>
+        
+          <div class="preloader-wrapper small active">
+            <div class="spinner-layer spinner-green-only">
+              <div class="circle-clipper left">
+                <div class="circle"></div>
+              </div><div class="gap-patch">
+                <div class="circle"></div>
+              </div><div class="circle-clipper right">
+                <div class="circle"></div>
+              </div>
+            </div>
+          </div>
+    </div>
+
+
+    <div class="container">
+        <h4>Feature Discovery</h4>
+        <p>This allows us to easily introduce users to new features and functionality at relevant moments</p>
+        <div class="fixed-action-btn">
+            <a id="menu" class="wave-effect waves-light btn-floating">
+                <i class="material-icons">menu</i>
+            </a>
+        </div>
+       
+       <div class="tap-target" data-target="menu">
+           <div class="tap-target-content">
+               <h5>Title</h5>
+               <p>A bunch of text</p>
+           </div>
+       </div>
+        
+    </div>
+
+    <div class="container">
+        <h4>Modal Images/ Material Box</h4>
+        <img src="./curry.jpg" alt="" class="materialboxed">
+    </div>
+    <div class="container">
+        
+        <h4>
+            carousel images
+        </h4>
+        <div class="carousel">
+            <a href="#one" class="carousel-item">
+                <img src="./curry.jpg" alt="curry">
+            </a>
+            <a href="#two" class="carousel-item">
+                <img src="./pasta.jpg" alt="pasta">
+            </a>
+        </div>
+    </div>
+
+    <div class="container">
+        <h4>Toast</h4>
+        <a onclick="M.toast({html: 'I am a toast'})" class="btn">Toast!</a>
+    </div>
+
+    <div class="container">
+        <h4>Tooltips</h4>
+        <a href="" class="btn tooltipped" data-position="left"data-tooltip="button information">hover</a>
+        <a href="" class="btn tooltipped" data-position="right" data-tooltip="button information">hover</a>
+        <a href="" class="btn tooltipped" data-position="top" data-tooltip="button information">hover</a>
+        <a href="" class="btn tooltipped" data-position="bottom" data-tooltip="button information">hover</a>
+    </div>
+    <h3>Forms</h3>
+    <div class="container">
+        
+    </div>
+
+    <div class="container">
+        <h4>Pickers</h4>
+        <input type="text" class="datepicker">
+    </div>
+
+    
+
+    <div class="container">
+        <h4>
+            Range
+        </h4>
+        <input type="range" id="test5" min="0" max="100" />
+    </div>
+
+    <div class="container">
+        <h4>
+            select
+        </h4>
+        <div class="row">
+            <div class="input-field col s12">
+            <select>
+              <option value="" disabled selected>Choose your option</option>
+              <option value="1">Option 1</option>
+              <option value="2">Option 2</option>
+              <option value="3">Option 3</option>
+            </select>
+            <label>Materialize Select</label>
+          </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+            <select multiple>
+              <option value="" disabled selected>Choose your option</option>
+              <option value="1">Option 1</option>
+              <option value="2">Option 2</option>
+              <option value="3">Option 3</option>
+            </select>
+            <label>Materialize Multiple Select</label>
+          </div>
+        </div>
+          
+        
+          <label>Browser Select</label>
+          <select class="browser-default">
+            <option value="" disabled selected>Choose your option</option>
+            <option value="1">Option 1</option>
+            <option value="2">Option 2</option>
+            <option value="3">Option 3</option>
+          </select>
+        
+        
+                    
+    </div>
+    <div class="container">
+        <h4>
+            switches
+        </h4>
+        <div class="switch">
+            <label>
+                Off
+                <input type="checkbox">
+                <span class="lever"></span>
+                On
+            </label>
+        </div>
+        <div class="switch">
+            <label>
+                Off
+                <input disabled type="checkbox">
+                <span class="lever"></span>
+                On
+            </label>
+        </div>
+        
+    </div>
+    <div class="container">
+        <h4>
+            Text input
+        </h4>
+        <div class="row">
+            <div class="input-field col s6">
+              <input placeholder="Placeholder" id="first_name" type="text" class="validate">
+              <label for="first_name">First Name</label>
+            </div>
+            <div class="input-field col s6">
+              <input id="last_name" type="text" class="validate">
+              <label for="last_name">Last Name</label>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h4>
+            chips
+        </h4>
+        <div class="chip">
+            <img src="./pasta.jpg" alt="Contact Person">
+            pasta
+          </div>
+    </div>
+    <div class="container">
+        <h4>
+            tags
+        </h4>
+        <div class="chip">
+            Tag
+            <i class="close material-icons">close</i>
+          </div>
+          <div class="chip">
+            Tag
+            <i class="close material-icons">close</i>
+          </div>
+          <div class="chips"></div>
+            <div class="chips chips-initial"></div>
+            
+    </div>
+    
+    <div class="container">
+        
+        <h4>
+            checkboxes
+        </h4>
+  <form action="#">
+    <p>
+      <label>
+        <input type="checkbox" />
+        <span>Red</span>
+      </label>
+    </p>
+    <p>
+      <label>
+        <input type="checkbox" checked="checked" />
+        <span>Yellow</span>
+      </label>
+    </p>
+    <p>
+      <label>
+        <input type="checkbox" class="filled-in" checked="checked" />
+        <span>Filled in</span>
+      </label>
+    </p>
+    <p>
+      <label>
+        <input id="indeterminate-checkbox" type="checkbox" />
+        <span>Indeterminate Style</span>
+      </label>
+    </p>
+    <p>
+      <label>
+        <input type="checkbox" checked="checked" disabled="disabled" />
+        <span>Green</span>
+      </label>
+    </p>
+    <p>
+      <label>
+        <input type="checkbox" disabled="disabled" />
+        <span>Brown</span>
+      </label>
+    </p>
+  </form>
+    </div>
+    <div class="container">
+        <h4>
+            collapsible
+        </h4>
+        
+        <ul class="collapsible">
+            <li>
+            <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
+            <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+            </li>
+            <li>
+            <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
+            <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+            </li>
+            <li>
+            <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
+            <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+            </li>
+        </ul>
+        
+    </div>
+    
+        
+        <div class="parallax-container">
+            <div class="parallax"><img src="./curry.jpg"></div>
+          </div>
+          <div class="section white">
+            <div class="row container">
+              <h2 class="header">Parallax</h2>
+              <p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
+            </div>
+          </div>
+          <div class="parallax-container">
+            <div class="parallax"><img src="./pasta.jpg"></div>
+          </div>
+    
+    
+    
+        <h4>
+            css footer
+        </h4>
+    
+    <footer class="page-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+              <h5 class="white-text">Footer Content</h5>
+              <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+              <h5 class="white-text">Links</h5>
+              <ul>
+                <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="container">
+          © 2014 Copyright Text
+          <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+          </div>
+        </div>
+      </footer>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function(){
+            const elems = document.querySelectorAll('.sidenav');
+            const instances = M.Sidenav.init(elems)
+
+            const modalElement = document.querySelectorAll('.modal');
+            const modalInstance = M.Modal.init(modalElement);
+
+            const featureDiscovery = document.querySelectorAll('.tap-target')
+            const featureInstance = M.TapTarget.init(featureDiscovery)
+        
+            
+
+
+            
+        })
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const elems = document.querySelectorAll('.materialboxed');
+            const instances = M.Materialbox.init(elems);
+        });
+        document.addEventListener('DOMContentLoaded', function() {
+            const elems = document.querySelectorAll('.tooltipped');
+            const instances = M.Tooltip.init(elems);
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.datepicker');
+            var instances = M.Datepicker.init(elems);
+        });
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.input-field select');
+            var instances = M.FormSelect.init(elems);
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.parallax');
+            var instances = M.Parallax.init(elems);
+        });
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.chips');
+            var instances = M.Chips.init(elems);
+        });
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.collapsible');
+            var instances = M.Collapsible.init(elems);
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.carousel');
+            var instances = M.Carousel.init(elems, {
+                fullWidth: false,
+            });
+        });
+        // const slider = document.getElementById('test-slider');
+        // noUISlider.create(slider,{
+        //     start:[10, 50],
+        //     connect: true,
+        //     step:1,
+        //     orientation: 'horizontal',
+        //     range:{
+        //         'min': 0,
+        //         'max': 100
+        //     },
+        //     format: wNumb({
+        //         decimals:0
+        //     })
+        // })
+    </script>
+</body>
+</html>
